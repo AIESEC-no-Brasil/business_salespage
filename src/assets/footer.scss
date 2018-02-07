@@ -1,0 +1,26 @@
+footer.footer {
+  background: #52565e;
+  color: white;
+}
+
+footer.footer nav .has-dropdown .navbar-link:hover {
+    background: transparent;
+}
+footer.footer nav .has-dropdown  .navbar-dropdown > a {
+    color: black;
+    &::before:hover {
+        background: transparent;
+    }
+}
+
+footer.footer nav {
+  background: transparent;
+  & a {
+    color: #ffc845;
+    &:hover  {
+      background: transparent;
+      color: #ffc845;
+    }
+  }
+  
+}

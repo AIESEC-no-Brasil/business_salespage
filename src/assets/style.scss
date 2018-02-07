@@ -1,0 +1,27 @@
+@import url('https://fonts.googleapis.com/css?family=Lato|Roboto:500');
+@import "presentation.scss";
+@import "companys.scss";
+@import "benefits.scss";
+@import "numbers.scss";
+@import "perfil.scss";
+@import "form.scss";
+@import "footer.scss";
+@import "newsletter.scss";
+
+
+html,body {
+  font-size: 14px;
+  font-family: 'Roboto', 'Lato', sans-serif;
+  background: white;
+}
+
+@media (max-width: 420px) {
+  html,body {
+    font-size: 12px;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .navbar {
+      min-height: 4rem;
+  }
+}

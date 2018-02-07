@@ -1,0 +1,13 @@
+section#form-partner {
+  background-color: #f1f1f1;
+}
+section#form-partner form {
+    max-width: 50%;
+}
+
+@media (max-width: 480px) {
+    section#form-partner form {
+        max-width: 100%;
+    }   
+}
+

@@ -1,0 +1,8 @@
+section#numbers {
+    background: url('./imgs/Layer 6.png');
+    color: white;
+    & strong {
+        font-weight: bold;
+        color: white;
+    }
+}
