@@ -9,54 +9,57 @@
 </head>
 
 <body>
-    <nav class="navbar is-fixed-top is-transparent">
-        <div class="container">
-            <div class="navbar-brand">
-                <a class="navbar-item" href="#">
-                    <img src="images/logo.png" id="logo-aiesec" alt="Logo da AIESEC">
-                </a>
-                <div class="navbar-burger burger" data-target="navbar-menu-aiesec">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                </div>
-            </div>
+    <div class="container">
+        <nav class="navbar is-fixed-top is-transparent">
+            <div class="container">
+                <div class="navbar-brand">
+                    <a href="#inicio">
+                        <img src="images/logo.png" width="300" height="50" id="logo-aiesec" alt="Logo da AIESEC">
+                    </a>
 
-            <div id="navbar-menu-aiesec" class="navbar-menu">
-                <div class="navbar-end is-uppercase">
-                    <a class="navbar-item " href="#inicio">
-                        Inicio
-                    </a>
-                    <a class="navbar-item " href="#quem-somos">
-                        A Aiesec
-                    </a>
-                    <a class="navbar-item " href="#inscrevase">
-                        Inscreva sua empresa
-                    </a>
-                    <div class="navbar-item has-dropdown is-hoverable">
-                        <a class="navbar-link" href="#">
-                            Eventos
-                        </a>
-                        <div class="navbar-dropdown is-boxed">
-                            <a class="navbar-item" href="#">
-                                Participar
-                            </a>
-                            <a class="navbar-item" href="#">
-                                Patrocinar
-                            </a>
-
-                        </div>
+                    <div class="navbar-burger burger" data-target="navbar-menu-aiesec">
+                        <span></span>
+                        <span></span>
+                        <span></span>
                     </div>
-                    <a class="navbar-item " href="#">
-                        Blog
-                    </a>
-                    <a class="navbar-item " href="#">
-                        Fale conosco
-                    </a>
+                </div>
+
+                <div id="navbar-menu-aiesec" class="navbar-menu">
+                    <div class="navbar-end is-uppercase">
+                        <a class="navbar-item " href="#inicio">
+                            Inicio
+                        </a>
+                        <!-- <a class="navbar-item " href="#quem-somos">
+                            Blog
+                        </a>
+                        <a class="navbar-item " href="#inscrevase">
+                            Inscreva sua empresa
+                        </a> -->
+                        <!-- <div class="navbar-item has-dropdown is-hoverable">
+                            <a class="navbar-link" href="#">
+                                Eventos
+                            </a>
+                            <div class="navbar-dropdown is-boxed">
+                                <a class="navbar-item" href="#">
+                                    Participar
+                                </a>
+                                <a class="navbar-item" href="#">
+                                    Patrocinar
+                                </a>
+
+                            </div>
+                        </div> -->
+                        <a class="navbar-item " href="#">
+                            Blog
+                        </a>
+                        <a class="navbar-item " href="#form-partner">
+                            Fale conosco
+                        </a>
+                    </div>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+    </div>
     <section class="hero is-fullheight is-fullwidth" id="inicio">
         <div class="hero-body has-text-centered">
             <div class="container">
@@ -70,7 +73,7 @@
                     <br> que buscam jovens intercambistas da AIESEC.
                 </h2>
                 <div class="btn-container">
-                    <a href="#">
+                    <a href="#form-partner">
                         <p class="centered is-uppercase is-size-8-mobile">Saiba como a sua empresa pode experimentar
                             <br> uma transformação positiva atraves de jovens lideranças globais</p>
                         <img src="images/Rounded Rectangle 1+.png"></img>
@@ -153,30 +156,30 @@
             <div class="container">
                 <div class="tabs is-fullwidth has-text-centered is-size-5 is-size-7-mobile">
                     <ul>
-                        <li class="is-active" data-target="beneficios-ambiente-multicultural">
+                        <li class="tab-link" data-target="beneficios-ambiente-multicultural">
                             <a>Ambiente
                                 <br> multicultural</a>
                         </li>
-                        <li data-target="beneficios-jovens-resultados">
+                        <li class="tab-link" data-target="beneficios-jovens-resultados">
                             <a>Jovens orientados
                                 <br> aos resultados</a>
                         </li>
-                        <li data-target="beneficios-ideias-inovadoras">
+                        <li class="tab-link" data-target="beneficios-ideias-inovadoras">
                             <a>Propostas e ideias
                                 <br> mais inovadoras</a>
                         </li>
-                        <li data-target="beneficios-custo-burocracia">
+                        <li class="tab-link" data-target="beneficios-custo-burocracia">
                             <a>Menor custo
                                 <br>e menos burocracia</a>
                         </li>
-                        <li data-target="beneficios-tranquilidaded-contratacao">
+                        <li class="tab-link" data-target="beneficios-tranquilidade-contratacao">
                             <a>Tranquilidade
                                 <br>na contratação</a>
                         </li>
                     </ul>
                 </div>
                 <div id=" mb-3">
-                    <div id="beneficios-ambiente-multicultural">
+                    <div class="tab-content" id="beneficios-ambiente-multicultural">
                         <div class="columns mt-2">
                             <div class="column mt-2 is-size-5 is-size-6-mobile has-text-centered-mobile">
                                 <p>A presença de um talento internacional
@@ -206,7 +209,7 @@
                                 <h4 class="has-text-blue mb-2">Guilherme Henandez - Nextar</h4>
                                 <p class="is-size-5">
                                     <i>"Soube do programa de itercâmbio
-                                        <br>  da aiesec em um momento muito bacana,
+                                        <br> da aiesec em um momento muito bacana,
                                         <br> pois estávamos para lançar a versão em
                                         <br> inglês do nosso sistema. Trouxemos
                                         <br> 3 intercâmbistas "</i>
@@ -214,12 +217,12 @@
                             </div>
                         </div>
                     </div>
-                    <div id="beneficios-jovens-resultados">
+                    <div class="tab-content" id="beneficios-jovens-resultados">
                         <div class="columns mt-2">
                             <div class="column mt-2 is-size-5 is-size-6-mobile has-text-centered-mobile">
                                 <p>Jovens qualificados e engajados, com
                                     <br>especialidades de diversos setores.
-                                    </p>
+                                </p>
                                 <br>
                                 <p>A AIESEC desenvolve profissionais que,
                                     <br> comprometidos com a empresa, sabem
@@ -228,7 +231,7 @@
                             </div>
                             <div class="column has-text-centered">
                                 <figure class="image is-128x128 mb-1 m-auto">
-                                    <img src="images/Layer 3.png" class="is-rounded">
+                                    <img src="images/Layer 5.png" class="is-rounded">
                                 </figure>
                                 <h4 class="has-text-blue mb-2">Rodrigo Costa - Itaú</h4>
                                 <p class="is-size-5">
@@ -241,18 +244,99 @@
                             </div>
                         </div>
                     </div>
+                    <div class="tab-content" id="beneficios-ideias-inovadoras">
+                        <div class="columns mt-2">
+                            <div class="column mt-2 is-size-5 is-size-6-mobile has-text-centered-mobile">
+                                <p>Mentes mais inovadoras trazedo
+                                    <br>vantagens competitivas de outros píeses
+                                    <br> para dentro da sua empresa
+                                </p>
+                                <br>
+                                <p>Intercambistas compartilham a visão de
+                                    <br> outros mercados, importante na busca por
+                                    <br> inovação ou mesmo expansão do negócio
+                                </p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-128x128 mb-1 m-auto">
+                                    <img src="images/Layer 3.png" class="is-rounded">
+                                </figure>
+                                <h4 class="has-text-blue mb-2">Henrique Tso - Votorantim</h4>
+                                <p class="is-size-5">
+                                    <i>"A AIESEC passa a ser uma parceira
+                                        <br> estratégica quando estamos buscando
+                                        <br> jovens com alto potencial, que podem
+                                        <br> fazer a diferença dentro da organizção "
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="beneficios-custo-burocracia">
+                        <div class="columns mt-2">
+                            <div class="column mt-2 is-size-5 is-size-6-mobile has-text-centered-mobile">
+                                <p>Intercâmbios categorizados como estágio
+                                    <br>sem vínvulo como contratação normal.
+                                </p>
+                                <br>
+                                <p>O processo é mais simples e mais
+                                    <br> econômico para a empresa
+                                </p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-128x128 mb-1 m-auto">
+                                    <img src="images/Layer 10.png" class="is-rounded">
+                                </figure>
+                                <h4 class="has-text-blue mb-2">Rodolfo Ohl - Survey Monkey</h4>
+                                <p class="is-size-5">
+                                    <i>"Eu oriento para as empresas que vale a
+                                        <br> pena fazer parceria com a AIESEC, porque
+                                        <br> estarão se relacionando com uma boa
+                                        <br> marca e com um público bem qualidifcado "
+                                    </i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-content" id="beneficios-tranquilidade-contratacao">
+                        <div class="columns mt-2">
+                            <div class="column mt-2 is-size-5 is-size-6-mobile has-text-centered-mobile">
+                                <p>A AIESEC cuida de todo o processo, e se
+                                    <br>coloca à disposição para prestar suporte e
+                                    <br> atendimento em todas as etapas
+                                </p>
+                                <br>
+                                <p>A AIESEC conta com jovens mais
+                                    <br> preparados graças ao desenvolvimento de
+                                    <br> competências pessoais e profissionais de
+                                    <br> alto valor.</p>
+                            </div>
+                            <div class="column has-text-centered">
+                                <figure class="image is-128x128 mb-1 m-auto">
+                                    <img src="images/Layer 4.png" class="is-rounded">
+                                </figure>
+                                <h4 class="has-text-blue mb-2">Rogério Quaresma - Fundaçãoo Estudar</h4>
+                                <p class="is-size-5">
+                                    <i>"Mantenho a rede da AIESEC próxima, a
+                                        <br> gente consegue trazer para os nossos
+                                        <br> programas um talento com sinergia de
+                                        <br> valores muito grande, e preparado para
+                                        <br> fazer aquilo que a gente espera "</i>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div class="btn-container mt-3">
-                <a href="#">
+                <a href="#form-partner">
                     <p class="centered is-size-6 is-size-7-mobile is-uppercase">Descubra como ser parceiro da aiesec e ter
                         <br> jovens lideranças participando ativamente de seu negócio</p>
                     <img src="images/Rounded Rectangle 1.png"></img>
                 </a>
             </div>
         </div>
-
     </section>
     <section class="section has-text-white" id="numbers">
         <nav class="level">
@@ -294,8 +378,8 @@
             <br> mais adequado para a necessidade de sua empresa ou startup</h1>
         <div class="columns has-text-centered">
             <div class="column">
-                <img src="images/Talento Global logo-03.png" class="mt-4">
-                <p class="mb-2 is-size-5">
+                <img src="images/Talento Global logo-03.png" class="mt-5 mb-2">
+                <p class="mb-4 is-size-5">
                     Jovem capaz de se comunicar nos diversos ambientes de forma
                     <br> efetiva; adaptar-se frente a situações desafiadoras e ser
                     <br> orientado(a) a soluções, ao mesmo tempo em que entende e vive
@@ -308,21 +392,22 @@
                 <figure class="image is-128x128 mb-1 m-auto">
                     <img src="images/Layer 7.png" class="is-rounded">
                 </figure>
-                <h4 class="has-text-blue mb-2">Gilson Vilela - loasys</h4>
+                <h4 class="has-text-blue mb-2">Prisicla Pacheco - Danone</h4>
                 <p class="is-size-5">
-                    <i>"É uma bela oportunidade de compartilhar
-                        <br> conhecimento e de ter acesso à mão de
-                        <br> obra diferenciada de outros países e que
-                        <br> pode ajudar muito a empresa"</i>
+                    <i>"O relacinamento com a AIESEC tem sido super bacana, a
+                        <br> gente tem estreitado cda vez mais a relação, até mesmo
+                        <br> pelos resultados"</i>
                 </p>
             </div>
             <div class="column">
-                <img src="images/Emprendedor Global logo-03.png" class="mt-4">
+                <img src="images/Emprendedor Global logo-03.png" class="mt-4 mb-2">
                 <p class="mb-2 is-size-5">
-                    Jovem capaz de se comunicar nos diversos ambientes de forma
-                    <br> efetiva; adaptar-se frente a situações desafiadoras e ser
-                    <br> orientado(a) a soluções, ao mesmo tempo em que entende e vive
-                    <br> seus valores a partir do autoconhecimento.
+                    Jovem com habilidades técnicas e de liderança necessárias para
+                    <br> ingressar no mercado de trabalho, ao mesmo tempo em que
+                    <br> ganha uma visão mais rica do mundo empresarial ampliando seu
+                    <br> network internacional. Busca a oporunidade de explorar sua
+                    <br> criatividade e suas paixões; e de viver a diversidade, encarando
+                    <br> desafios de maneira positiva
                 </p>
                 <p class="mb-3 is-size-6">
                     Veja o depoimento de empresa parceira que conta com
@@ -331,19 +416,18 @@
                 <figure class="image is-128x128 mb-1 m-auto">
                     <img src="images/Ellipse 1++.png" class="is-rounded">
                 </figure>
-                <h4 class="has-text-blue  mb-2">Gilson Vilela - loasys</h4>
+                <h4 class="has-text-green  mb-2">Rodrigo Cartacho - Sympla</h4>
                 <p class="is-size-5">
-                    <i>"É uma bela oportunidade de compartilhar
-                        <br> conhecimento e de ter acesso à mão de
-                        <br> obra diferenciada de outros países e que
-                        <br> pdoe ajudar muito a empresa"</i>
+                    <i>"A experiência com intercambistas tem sido super válida
+                        <br> para a gente "
+                    </i>
                 </p>
             </div>
         </div>
         <div class="has-text-centered has-text-blue">
             <p>Para mais detalhes ou esclarecimento de dúvidas sobre os programas
                 <br> e perfis dos jovens, preencha o
-                <a href="#">formulário abaixo</a>
+                <a href="#form-patiner">formulário abaixo</a>
             </p>
         </div>
     </section>
@@ -356,26 +440,26 @@
                     com
                     <strong>perfis de jovens que buscam desafios e desesenvolvimento de liderança.</strong>
                 </p>
-                <p class="has-text-justified has-text-red">
+                <p class="has-text-justified has-text-red is-size-5">
                     Assista ao vídeo e saiba mais sobre o popósito de liderança jovem da AIESEC
                 </p>
-                <!-- <img src="images/Shape 5.png" style="margin-left: 80%; margin-top: -10%" alt=""> -->
+                <img src="images/Shape 5.png" style="margin-left: 82%;" class="is-hidden-mobile" alt="">
             </div>
             <div class="column">
-                <iframe width="100%" height="300" src="https://www.youtube.com/embed/JHYE1ef8G4M" frameborder="0" allow="autoplay; encrypted-media"
+                <iframe width="100%" height="300" src="https://www.youtube.com/embed/ag8Vdo9ikOw" frameborder="0" allow="encrypted-media"
                     allowfullscreen></iframe>
                 <p class="is-size-6">Veja em menos de um minuto como jovens talentos podem ser agentes de mudança em sua empresa</p class="is-size-7">
             </div>
         </div>
     </section>
     <section class="section" id="form-partner">
-        <div class="has-text-centered is-size-5">
-            <h1>Quer saber como a AIESEC pode ajudar a sua empresa? Preencha o formulário
+        <div class="has-text-centered  ">
+            <h1 class="has-text-blue is-size-3 mb-2 ">Quer saber como a AIESEC pode ajudar a sua empresa? Preencha o formulário
                 <br> abaixo e nossos consultores especializados terão prazer em lhe atender.</h1>
-            <h2>È rápido, e você não levará mais do que 3 minutos.
+            <h2 class="is-size-4 mb-3">È rápido, e você não levará mais do que 3 minutos.
                 <br> Nossos consultores entrarão em contato sem compromisso</h2>
         </div>
-        <form  class="m-auto is-size-6">
+        <!-- <form class="m-auto is-size-6">
             <div class="field">
                 <label class="label">*Nome Completo</label>
                 <div class="control">
@@ -437,13 +521,23 @@
                 </div>
             </div>
 
-            <div class="field is-grouped">
+            <div class="field is-grouped is-pulled-right">
                 <div class="control">
                     <button class="button has-bg-yellow is-uppercase is-rounded">Enviar Formulário</button>
                 </div>
             </div>
 
-        </form>
+        </form> -->
+        <!-- BEGIN Podio web form -->
+        <script src="https://podio.com/webforms/13136632/894184.js"></script>
+        <script type="text/javascript">
+            _podioWebForm.render("894184")
+        </script>
+        <noscript>
+            <a href="https://podio.com/webforms/13136632/894184" target="_blank">Please fill out the form</a>
+        </noscript>
+        <!-- END Podio web form -->
+
     </section>
     <section class="section" id="recognized">
         <div class="container">
@@ -485,84 +579,85 @@
             </div>
         </div>
     </section>
-    <footer class="footer">
+    <footer class="footer is-paddingless">
         <div class="content">
-            <nav class="level mb-3">
-                <div class="level-item">
-                    <img src="images/Vector Smart Object1.png" alt="">
-                </div>
-                <div class="level-item ">
-                    <nav class="navbar is-transparent" role="navigation" aria-label="main navigation">
-                        <div class="navbar-menu">
-                            <div class="navbar-end is-uppercase">
-                                <a class="navbar-item ">
-                                    Inicio
-                                </a>
-                                <a class="navbar-item ">
-                                    A Aiesec
-                                </a>
-                                <a class="navbar-item ">
-                                    Inscreva sua empresa
-                                </a>
-                                <div class="navbar-item has-dropdown  is-hoverable">
-                                    <a class="navbar-link is-transparent" href="/documentation/overview/start/">
-                                        Eventos
-                                    </a>
-                                    <div class="navbar-dropdown is-boxed">
-                                        <a class="navbar-item" href="/documentation/overview/start/">
-                                            Participar
+            <div class="container">
+                <div class="columns mb-3">
+                    <div class="column">
+                        <img src="images/Vector Smart Object1.png" alt="">
+                    </div>
+                    <div class="column">
+                        <nav class="navbar is-transparent ml-3" role="navigation" aria-label="main navigation">
+                            <div class="navbar-menu">
+                                <div id="navbar-menu-aiesec" class="navbar-menu">
+                                    <div class="navbar-end is-uppercase">
+                                        <a class="navbar-item " href="#inicio">
+                                            Inicio
                                         </a>
-                                        <a class="navbar-item" href="https://bulma.io/documentation/modifiers/syntax/">
-                                            Patrocinar
+                                        <!-- <a class="navbar-item " href="#quem-somos">
+                                                        Blog
+                                                    </a>
+                                                    <a class="navbar-item " href="#inscrevase">
+                                                        Inscreva sua empresa
+                                                    </a> -->
+                                        <!-- <div class="navbar-item has-dropdown is-hoverable">
+                                                        <a class="navbar-link" href="#">
+                                                            Eventos
+                                                        </a>
+                                                        <div class="navbar-dropdown is-boxed">
+                                                            <a class="navbar-item" href="#">
+                                                                Participar
+                                                            </a>
+                                                            <a class="navbar-item" href="#">
+                                                                Patrocinar
+                                                            </a>
+                            
+                                                        </div>
+                                                    </div> -->
+                                        <a class="navbar-item " href="#">
+                                            Blog
                                         </a>
-
+                                        <a class="navbar-item " href="#form-partner">
+                                            Fale conosco
+                                        </a>
                                     </div>
                                 </div>
-                                <a class="navbar-item ">
-                                    Blog
-                                </a>
-                                <a class="navbar-item ">
-                                    Fale conosco
-                                </a>
                             </div>
-                        </div>
-                    </nav>
+                        </nav>
+                    </div>
                 </div>
-            </nav>
 
-
-            <div class="container">
-                <div class="columns ">
+                <div class="columns">
                     <div class="column">
                         <p>&copy; AEISEC no Brasil 2018. Todos os direitos reservados</p>
                     </div>
                     <div class="column has-text-centered">
-                        <div class="field is-grouped " style="margin-left: 50%">
+                        <div class="field is-grouped " style="margin-left: 35%">
                             <p class="control">
-                                <a class="button ">
+                                <a class="button" target="_blank" href="https://www.facebook.com/AIESECinBrazil/">
                                     <span class="icon">
                                         <img src="images/facebook.svg" alt="">
                                     </span>
                                 </a>
                             </p>
                             <p class="control">
-                                <a class="button">
+                                <a class="button" target="_blank" href="https://twitter.com/AIESECBrasil">
                                     <span class="icon">
-                                            <img src="images/twitter.svg" alt="">
+                                        <img src="images/twitter.svg" alt="">
                                     </span>
                                 </a>
                             </p>
                             <p class="control">
-                                <a class="button">
+                                <a class="button" target="_blank" href="https://www.instagram.com/explore/locations/4539212/aiesec-in-brazil/?hl=en">
                                     <span class="icon">
-                                            <img src="images/instagram.svg" alt="">
+                                        <img src="images/instagram.svg" alt="">
                                     </span>
                                 </a>
                             </p>
                             <p class="control">
-                                <a class="button ">
+                                <a class="button" target="" href="https://www.youtube.com/user/AIESECinBrazil">
                                     <span class="icon">
-                                            <img src="images/youtube.svg" alt="">
+                                        <img src="images/youtube.svg" alt="">
                                     </span>
                                 </a>
                             </p>
@@ -570,13 +665,13 @@
 
                     </div>
                     <div class="column">
-                        <p class="is-pulled-right">Pagina desenvolvida por supersonic</p>
+                        <p style="margin-left: 36%">Pagina desenvolvida por supersonic</p>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    
+
 </body>
 
 </html>

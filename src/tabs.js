@@ -1,21 +1,27 @@
 export const init = () => {
-    document.addEventListener('DOMContentLoaded', function () {
-        // Get all "tabs li" elements
-        const $liTabs = Array.prototype.slice.call(document.querySelectorAll('.tabs li'), 0);
-        if ($liTabs.length === 0) return
-        $liTabs.map($el => {
-            $el.addEventListener('click', () => {
-                if($el.classList.contains('is-active')) return
-                
-                const target = $el.dataset.target;
-                const $target = document.getElementById(target)
-                $liTabs.filter($liTabs => $liTabs !== $el && $liTabs.classList.contains('is-active'))
-                       .map(el => {
-                           el.classList.toggle('is-active')
-                       }); 
-                $el.classList.toggle('is-active');
-                $target.classList.toggle('hidden')
-            })
-        })
-    })
-}
+  document.addEventListener("DOMContentLoaded", () => {
+    hideTabs();
+    
+    document.querySelectorAll(".tab-link").forEach(tabLink => {
+      tabLink.addEventListener("click", evt => {
+        const benefitName = evt.currentTarget.dataset.target;
+        hideTabs();
+
+        const tablinks = document
+          .querySelectorAll(".tab-link")
+          .forEach(tabLink => {
+            tabLink.classList.remove("is-active");
+          });
+        document.getElementById(benefitName).style.display = "block";
+        evt.currentTarget.classList.add("is-active");
+      });
+    });
+    document.querySelector('.tab-link').click()
+  });
+};
+
+const hideTabs = () => {
+  Array.from(document.getElementsByClassName("tab-content")).map(tabContent => {
+    tabContent.style.display = "none";
+  });
+};

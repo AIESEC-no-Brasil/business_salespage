@@ -6,13 +6,13 @@
 @import "perfil.scss";
 @import "form.scss";
 @import "footer.scss";
+@import "animation.scss";
 @import "newsletter.scss";
 
 
 html,body {
   font-size: 14px;
-  font-family: 'Roboto', 'Lato', sans-serif;
-  background: white;
+  font-family: 'Lato', 'Roboto', sans-serif;
 }
 
 @media (max-width: 420px) {
